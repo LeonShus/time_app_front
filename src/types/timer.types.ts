@@ -14,4 +14,4 @@ export interface ITimerSessionResponse extends IDefaultFields {
 
 export type TypeTimerSessionFormState = Partial<Omit<ITimerSessionResponse, 'id' | 'createdAt' | 'updatedAt'>>
 
-export type TypeTimerRoundState = Partial<Omit<ITimerSessionResponse, 'id' | 'createdAt' | 'updatedAt'>>
+export type TypeTimerRoundFormState = Partial<Omit<ITimerSessionResponse, 'id' | 'createdAt' | 'updatedAt'>>
