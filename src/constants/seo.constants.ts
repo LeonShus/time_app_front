@@ -1,2 +1,2 @@
 export const NO_INDEX_PAGE = { robots: { index: false, follow: false } }
-export const SITE_NAME = 'Leon Afpps'
+export const SITE_NAME = 'Leon Apps'

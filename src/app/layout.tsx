@@ -1,13 +1,13 @@
+import { ColorModeScript } from '@chakra-ui/react'
 import type { Metadata } from 'next'
 import { Noto_Sans } from 'next/font/google'
 import { Toaster } from 'sonner'
+import theme from 'theme/theme'
 
 import { SITE_NAME } from '@/constants/seo.constants'
 
-
-import { Providers } from './providers'
-
 import './globals.scss'
+import { Providers } from './providers'
 
 const zen = Noto_Sans({
 	subsets: ['cyrillic', 'latin'],
@@ -32,15 +32,16 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={zen.className}>
+			<body>
 				<Providers>
 					{children}
 
-					<Toaster 
-            theme='dark'
-            position='bottom-right'
-            duration={1500}
-          />
+
+					<Toaster
+						theme='dark'
+						position='bottom-right'
+						duration={1500}
+					/>
 				</Providers>
 			</body>
 		</html>
