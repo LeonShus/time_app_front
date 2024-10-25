@@ -3,7 +3,6 @@
 import { Center, Heading } from '@chakra-ui/react'
 import { Box } from 'components/uikit'
 import { useState } from 'react'
-import * as yup from 'yup'
 
 import { AuthForm } from './AuthForm'
 import { RegisterFom } from './RegisterFom'
